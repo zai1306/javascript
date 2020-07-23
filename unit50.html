@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        zip: <br>
+        <input type="text" name="" id="zip" onblur="fillcity();"><br>
+        city <br>
+        <input type="text" id="city">
+    </form>
+    <script>
+        function fillcity(){
+            var cityname ;
+            var zipEntered = document.getElementById("zip").value;
+            switch (zipEntered) {
+                case '06068':
+                cityname = 'chicago';
+                break
+                case '58612':
+                cityname = 'karachi';
+                break
+                case '98612':
+                cityname = 'lahore';
+                
+            }
+            document.getElementById("city").value = cityname;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+<div id="got">
+    <p>that's text</p>
+    <p class="para">that's text1</p>
+    <p onclick="tich()" ondblclick="this.style.color = 'green';">that's text2</p>
+</div>
+     <script>
+
+        var par =  document.getElementsByTagName("p")
+for(var i = 0; i < par.length; i++){
+        par[i].style.fontSize = "25px"
+    }
+var para = document.getElementsByClassName("para")
+
+function tich(){
+    par[2].style.backgroundColor = "pink"
+}
+
+var p = document.getElementById("got");
+  console.log(p.parentNode.firstChild)
+
+
+  /*for(i=0; i < p.childNodes.length; i++){
+      if(d.childNodes[i].nodeTypes === 1){
+          loop++;
+      }
+      if(p.loop === 2){
+          p.childNodes[2].innerHTML = 'humpty dumty';
+          break;
+      }
+
+      
+  }*/
+ 
+ console.log(got.length)
+ 
+      </script>
+ </body>
+ </html>

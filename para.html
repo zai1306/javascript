@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo exercitationem <a href="javscript:void(0);" onclick="expand()">click here</a></p>
+     
+    <p id="hide" style="visibility:">
+    </p>
+    
+<script>
+
+    function expand(){
+        var paraExp = "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsa debitis exercitationem dolorem cupiditate modi, distinctio quaerat reprehenderit laboriosam aut quibusdam quo, esse voluptates eveniet repudiandae, explicabo dolore fuga perspiciatis!        ";
+         document.getElementById("para").innerHTML = paraExp;
+    
+    }
+    function contact() {
+        const paraCons = document.getElementById("para")
+    }
+</script>
+</body>
+
+</html>

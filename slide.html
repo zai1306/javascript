@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .open{
+            color: red;
+        }
+
+        .hitMe{
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        oh! that's it
+    </h1>
+    <h1 class="hitMe">
+        oh no
+    </h1>
+
+    <script>
+        /*
+        var ele = document.querySelector('h1')
+        ele.classList.add('open')
+        console.log(ele.classList)
+
+        var hit = document.querySelector('h1')
+        document.addEventListener('click', function(){
+            hit.innerText = 'hey you'
+        }
+        )
+
+        var hit1 = document.querySelector('h1')
+        document.addEventListener('click', hey)
+        function hey (){
+            hit1.innerHTML = 'oh yeah'
+        }
+        hit1.removeEventListener('hey you', hey)
+
+        var hitMe = document.querySelector('.hitMe')
+        hitMe.addEventListener('click', function(){
+            console.log('00000000')
+        })
+
+        var hitMe = document.querySelectorAll('.hitMe');
+        hitMe.forEach(function (but) {
+            but.addEventListener('click', function(){
+                console.dir(but)
+            })
+        });*/
+
+        var  fruits = ['apple', 'mango', 'orange', 'banana'];
+        var [firstFruit, SecondFruit, ...rest] = fruits
+
+        console.log(rest)
+
+       var contact = {'name':"zai", "age":"22", "email":"zahi.ilyas@gmail.com"};
+       var {name, age, email} = contact;
+       console.log(age);
+
+       var contact = {'name':"zai", "age":"22", "email":"zahi.ilyas@gmail.com"};
+       var {phone = "090078601", address = "1771/361"} = contact;
+       console.log(name, phone)
+
+       var variablename1 = ['grapes', 'oranges', 'kiwi', 'chery'];
+       var  [...value] = variablename1;
+       console.log(value)
+
+      /* const person = {
+           name:'zai',
+           age:'22',
+           contact:"none"
+       }
+       person.job = {};*/
+
+       const person = {
+           age:1,
+           sports:'any',
+           habbits:"reading"
+       }
+
+       person.job = {}
+
+       console.log(person)
+       Object.freeze(person)
+
+       person.job = 'none';
+       console.log(person)
+
+       var age = prompt('your age...')
+       var detail1 = {
+           name:'zai',
+           fname:'M.Ilyas',
+           age:22
+       }
+
+       console.log(detail1[age])
+    </script>
+</body>
+</html>

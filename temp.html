@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    h2{
+        font-size: 80px;
+        color: blue;
+    }
+</style>
+</head>
+<body>
+   <p id="pp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem adipisci voluptates saepe quas provident voluptatibus ab, minus, minima atque nesciunt voluptatem, eveniet dolorum accusantium. Fugiat ducimus laborum laboriosam veritatis maiores!</p>
+ <h2>
+     hey man
+ </h2>
+
+ <p class="item">
+     lorem lorem lorem is a headache
+ </p>
+
+    <script>
+      /*  var temp = `hello from "zii", and that's 'too' be informed`;
+        alert(temp)
+
+        if (true){
+            var user = 'zahi';
+            let user1 = 'ameen';
+            const user2 = 'kabeer';
+
+            console.log(user1)
+        console.log(user2)
+        }
+        console.log(user)
+      
+function func(){
+    var userName = 'john martin';
+    
+
+        function parent(){
+        var likes = 'book reading';
+
+
+        function child() {
+           var prefrence = 'shopping'
+           
+       }
+    }
+}
+
+const dog = 'bread'
+
+function isDog(){
+    console.log(dog)
+}
+function go(){
+    const dog = 'sunny'
+    isDog(dog)
+}
+go();
+
+//function nested
+function hi(){
+    function yell(){
+        console.log('hello')
+    }
+    yell()
+}
+hi();
+ 
+sayHi();
+
+ function add2(a, b){
+    return a+b;
+}
+
+function sayHi(){
+    console.log('hello');
+    console.log(add2(1, 2));
+}
+*/
+var par = document.querySelector('p').innerHTML;
+console.log(par);
+
+var all = document.querySelectorAll('.item');
+console.log(all)
+
+document.getElementById('pp').innerHTML = par
+console.log(par)    
+
+var b = document.querySelector('p')
+console.dir(b)
+ 
+var heading = document.querySelector('h2')
+//heading.textContent = 'hey john'
+
+heading.innerHTML = 'same here'
+heading.innerText = 'oh yeah'
+
+var b = document.querySelector('.item')
+b.classList.add('open')
+b.classList.remove('item')
+b.classList.add('run')
+console.log(b.classList)
+
+
+    </script>
+</body>
+</html>
